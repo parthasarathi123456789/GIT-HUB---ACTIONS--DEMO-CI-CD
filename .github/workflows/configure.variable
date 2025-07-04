@@ -1,0 +1,21 @@
+name: Example Variables
+
+on: [push]
+
+env:
+  GLOBAL_ENV: "I am global"
+
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    env:
+      JOB_ENV: "I am job level"
+    steps:
+      - name: Print variables
+        run: |
+          echo "Global: $GLOBAL_ENV"
+          echo "Job: $JOB_ENV"
+          echo "Step: $STEP_ENV"
+        env:
+          STEP_ENV: "I am step level"
+
