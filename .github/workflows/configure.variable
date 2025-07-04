@@ -15,7 +15,7 @@ jobs:
         run: |
           echo "Global: $GLOBAL_ENV"
           echo "Job: $JOB_ENV"
-          echo "Step: $STEP_ENV"
+          echo "Step: ${{the project_id}}"
         env:
           STEP_ENV: "I am step level"
 
