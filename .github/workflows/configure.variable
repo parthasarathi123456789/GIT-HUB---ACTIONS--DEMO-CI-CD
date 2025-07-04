@@ -1,9 +1,9 @@
 name: Example Variables
 
-on: [push]
+on: github_dispatch
 
 env:
-  GLOBAL_ENV: "I am global"
+  cloud: google-cloud
 
 jobs:
   example:
