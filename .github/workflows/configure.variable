@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Print variables
         run: |
-          echo "the name is sana"
+          echo "the project name is $${PARTHU_114}"
         env:
           STEP_ENV: "I am step level"
 
